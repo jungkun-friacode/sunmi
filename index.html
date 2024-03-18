@@ -25,12 +25,12 @@
       let div = '';
       message.map((item) => {
         div += `
-          <div class="border border-slate-200 shadow-xl mb-6 rounded-[6px] p-3">
+          <div class="border-2 border-slate-400 hover:border-2 hover:border-[#F6B310] shadow-xl mb-6 rounded-[10px] p-3">
             <div class="text-[#282828] text-sm">
               ${item.message}
             </div>
-            <div class="text-sm text-[#282828] font-semibold text-right pr-2">
-              - ${item.name} 
+            <div class="mt-3 text-sm text-[#282828] font-semibold text-right pr-2">
+              - ${item.name}
             </div>
           </div>
         `;
