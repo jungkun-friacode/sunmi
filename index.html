@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./message.js"></script>
+
   <title>Sister Jang, Sun-mi's Rolling Paper</title>
+
 </head>
 
 <body>
-  <div class="font-bold text-blue-700">
-    Rolling paper
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      Jang, Sun-mi's Rolling Paper
+    </div>
+  </header>
+
+  <div class="w-full p-3">
+
+    <div id="message_list"></div>
+
+    <script>
+      let div = '';
+      message.map((item) => {
+        div += `
+          <div class="border border-slate-200 shadow-xl mb-6 rounded-[6px] p-3">
+            <div class="text-[#282828] text-sm">
+              ${item.message}
+            </div>
+            <div class="text-sm text-[#282828] font-semibold text-right pr-2">
+              - ${item.name} 
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('message_list').innerHTML = div;
+    </script>
+
   </div>
+
 </body>
 
 </html>
