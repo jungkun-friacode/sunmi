@@ -12,7 +12,7 @@ const message = [
   {
     name: "어지숙",
     message:
-      "장자매의 아름다운 미소와<br />선한 소리없이 섬긴 행동을<br />미련가득 잊지 못해 그리워합니다<br />건강히 잘다녀 오시길 기도드려요~^",
+      "<span class='font-bold'>장</span>자매의 아름다운 미소와<br /><span class='font-bold'>선</span>한 소리없이 섬긴 행동을<br /><span class='font-bold'>미</span>련가득 잊지 못해 그리워합니다<br /><br />건강히 잘다녀 오시길 기도드려요~^",
   },
   {
     name: "박주율, 김미희 부부",
